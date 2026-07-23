@@ -1,0 +1,486 @@
+/* ===========================
+   AURO V3 - main.css
+=========================== */
+
+:root{
+
+    --gold:#D4AF37;
+    --black:#1F1F1F;
+    --white:#FFFFFF;
+    --bg:#F8F7F3;
+    --gray:#6E6E6E;
+
+    --radius:18px;
+
+    --shadow:
+        0 15px 35px rgba(0,0,0,.12);
+
+}
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+    background:var(--bg);
+    color:var(--black);
+
+}
+
+/* ===========================
+   Container
+=========================== */
+
+.container{
+
+    width:min(1200px,92%);
+    margin:auto;
+
+}
+
+/* ===========================
+   Loader
+=========================== */
+
+#loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#111;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    z-index:9999;
+
+    transition:.5s;
+
+}
+
+.loader-logo{
+
+    font-size:50px;
+
+    color:var(--gold);
+
+    font-family:'Cormorant Garamond',serif;
+
+    letter-spacing:10px;
+
+}
+
+/* ===========================
+   Navbar
+=========================== */
+
+#navbar{
+
+    position:fixed;
+
+    width:100%;
+
+    top:0;
+
+    left:0;
+
+    z-index:100;
+
+    transition:.3s;
+
+}
+
+#navbar .container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:22px 0;
+
+}
+
+.logo{
+
+    font-size:42px;
+
+    color:var(--gold);
+
+    font-family:'Cormorant Garamond',serif;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    gap:35px;
+
+    list-style:none;
+
+}
+
+nav a{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:var(--gold);
+
+}
+
+#menuButton{
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:30px;
+
+    cursor:pointer;
+
+}
+
+/* ===========================
+   Hero
+=========================== */
+
+.hero{
+
+    height:100vh;
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    background-image:
+    linear-gradient(rgba(0,0,0,.45),
+    rgba(0,0,0,.45)),
+    url("../assets/hero.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+.hero-content{
+
+    max-width:700px;
+
+    color:white;
+
+    z-index:2;
+
+}
+
+.subtitle{
+
+    color:var(--gold);
+
+    letter-spacing:3px;
+
+}
+
+.hero h1{
+
+    font-size:72px;
+
+    margin:20px 0;
+
+    font-family:'Cormorant Garamond',serif;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+    color:#ddd;
+
+    margin-bottom:35px;
+
+}
+
+/* ===========================
+   Button
+=========================== */
+
+.btn-primary{
+
+    display:inline-block;
+
+    padding:15px 34px;
+
+    background:var(--gold);
+
+    color:white;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:var(--shadow);
+
+}
+
+.btn-secondary{
+
+    display:inline-block;
+
+    margin-left:15px;
+
+    padding:15px 34px;
+
+    border:2px solid white;
+
+    border-radius:40px;
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
+/* ===========================
+   Intro
+=========================== */
+
+.intro{
+
+    padding:100px 0;
+
+}
+
+.intro h2{
+
+    font-size:50px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    margin-bottom:20px;
+
+}
+
+.intro p{
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+}
+
+/* ===========================
+   Featured
+=========================== */
+
+.featured{
+
+    padding:80px 0;
+
+}
+
+.card-wrapper{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    margin-top:40px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:var(--radius);
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card .image{
+
+    height:220px;
+
+    background:#ddd;
+
+}
+
+.card h3{
+
+    padding:20px;
+
+    font-size:28px;
+
+}
+
+.card p{
+
+    padding:0 20px 25px;
+
+    color:var(--gray);
+
+}
+
+/* ===========================
+   CTA
+=========================== */
+
+.cta{
+
+    padding:120px 0;
+
+    text-align:center;
+
+}
+
+.cta h2{
+
+    font-size:52px;
+
+    margin-bottom:35px;
+
+    font-family:'Cormorant Garamond',serif;
+
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+
+    background:#111;
+
+    color:white;
+
+    text-align:center;
+
+    padding:60px 0;
+
+}
+
+footer h3{
+
+    color:var(--gold);
+
+    font-size:36px;
+
+    margin-bottom:10px;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:900px){
+
+nav{
+
+display:none;
+
+}
+
+#menuButton{
+
+display:block;
+
+}
+
+.hero h1{
+
+font-size:48px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.btn-primary,
+.btn-secondary{
+
+display:block;
+
+margin:15px auto;
+
+width:220px;
+
+}
+
+.intro h2{
+
+font-size:40px;
+
+}
+
+.cta h2{
+
+font-size:40px;
+
+}
+
+}
