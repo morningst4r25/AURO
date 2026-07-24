@@ -2,7 +2,7 @@
 header{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:18px 7%;background:rgba(255,255,255,.8);backdrop-filter:blur(10px);z-index:9}
 .logo{font:700 42px "Cormorant Garamond",serif;color:#caa43b;letter-spacing:3px}
 nav a{text-decoration:none;color:#333;margin-left:22px}
-.hero{height:100vh;background:linear-gradient(rgba(20,20,20,.45),rgba(20,20,20,.45)),url("https://github.com/morningst4r25/AURO/blob/main/ChatGPT%20Image%20Jul%2024%2C%202026%2C%2009_24_32%20PM.png?auto=format&fit=crop&w=1600&q=80") center/cover fixed;display:grid;place-items:center;position:relative}
+.hero{height:100vh;background:linear-gradient(rgba(20,20,20,.45),rgba(20,20,20,.45)),url("https://github.com/morningst4r25/AURO/blob/main/ChatGPT%20Image%20Jul%2024,%202026,%2009_24_32%20PM.png?raw=true?auto=format&fit=crop&w=1600&q=80") center/cover fixed;display:grid;place-items:center;position:relative}
 .glass{background:rgba(255,255,255,.08);backdrop-filter:blur(8px);padding:40px;border:1px solid rgba(255,255,255,.2);border-radius:24px;max-width:700px;text-align:center;color:#fff}
 .tag{letter-spacing:3px;color:#f1d98b}.lead{opacity:.9}h1{font:700 76px "Cormorant Garamond",serif;margin:10px 0}.btn{display:inline-block;padding:14px 28px;background:#caa43b;color:#fff;text-decoration:none;border-radius:40px;margin:8px}.ghost{background:transparent;border:1px solid #fff}.scroll{position:absolute;bottom:20px;color:#fff;font-size:34px;animation:b 1.4s infinite}
 @keyframes b{50%{transform:translateY(8px)}}
